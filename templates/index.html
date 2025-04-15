@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Scalable Thread Management Library{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center py-5 bg-light">
+    <h1 class="display-4">Scalable Thread Management Library</h1>
+    <p class="lead">Efficient, reliable, and easy-to-use thread management for modern applications</p>
+    <div class="mt-4">
+        <a href="/dashboard" class="btn btn-primary btn-lg me-2">Get Started</a>
+        <a href="/features" class="btn btn-outline-primary btn-lg text-white border-white">Learn More</a>
+    </div>
+</div>
+
+<div class="features-highlight mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">High Performance</h3>
+                    <p class="card-text">Optimized thread management for maximum throughput and minimal overhead.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">Reliable</h3>
+                    <p class="card-text">Built-in error handling and recovery mechanisms for robust operation.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">Easy to Use</h3>
+                    <p class="card-text">Simple API with comprehensive documentation and examples.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="quick-start mt-5">
+    <h2 class="text-center mb-4">Quick Start</h2>
+    <div class="card">
+        <div class="card-body">
+            <pre><code class="language-python">from thread_manager import ThreadManager
+
+# Initialize the thread manager
+manager = ThreadManager()
+
+# Add tasks
+manager.add_task(my_function, args=(arg1, arg2))
+
+# Start processing
+manager.start()
+
+# Monitor performance
+metrics = manager.get_metrics()</code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section text-center mt-5 py-5 bg-light">
+    <h2>Ready to Get Started?</h2>
+    <p class="lead">Join thousands of developers using our thread management library</p>
+    <a href="/dashboard" class="btn btn-primary btn-lg">Try the Demo</a>
+</div>
+{% endblock %} 
